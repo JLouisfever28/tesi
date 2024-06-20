@@ -1,0 +1,56 @@
+/* Ensure the container takes up the full height of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container setup for split-screen */
+.container {
+  display: flex;
+  height: 100%;
+}
+
+/* Ensure the children divs take up equal space and have background images */
+.entract, .bella-ciao {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background images for each section */
+.entract {
+  background-image: url('/img/entract.jpg');
+}
+
+.bella-ciao {
+  background-image: url('/img/bellaciao.jpg');
+}
+
+/* Center the h1 within their respective divs */
+.entract h1, .bella-ciao h1 {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+  color: white; /* Adjust color for better visibility over background images */
+}
+
+/* Style for buttons */
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
